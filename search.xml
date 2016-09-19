@@ -4,6 +4,16 @@
   
     
     <entry>
+      <title><![CDATA[code]]></title>
+      <url>http://www.santotech.tech/2016/09/18/js&css/</url>
+      <content type="html"><![CDATA[<p>#This is a css code snippet</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#box</span> &#123;</div><div class="line">  <span class="attribute">backgroun-color</span>: <span class="number">#000</span>;</div><div class="line">  <span class="attribute">font-size</span>: <span class="number">2rem</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>#This is a javascript code snippet</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">count</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> a = <span class="number">2</span>,</div><div class="line">      b = <span class="number">4</span>;</div><div class="line">  <span class="keyword">return</span> a + b;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[santo]]></title>
       <url>http://www.santotech.tech/2016/09/14/santo/</url>
       <content type="html"><![CDATA[<h1 id="Title"><a href="#Title" class="headerlink" title="Title"></a>Title</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">1</span>, b = <span class="number">2</span>;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">count</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  a + b;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
