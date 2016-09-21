@@ -221,7 +221,7 @@ body,
   background: #006bde;
 }
 body {
-  background: #eaeaea;
+  background: #eaeaea url("images/white_wall.png") repeat;
   font: 14px "Titillium Web", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
   -webkit-text-size-adjust: 100%;
 }
@@ -336,7 +336,7 @@ code {
   clear: both;
 }
 #header {
-  background: #26272b;
+  background: #26272b url("images/illusion.png") repeat;
   padding-bottom: 60px;
   position: relative;
 }
@@ -910,6 +910,9 @@ code {
 .article-inner {
   overflow: hidden;
 }
+.article-header {
+  display: none;
+}
 .article-meta {
   height: 1.6em;
   line-height: 1.6em;
@@ -1466,6 +1469,7 @@ a.article-title:hover {
   clear: both;
 }
 .archive-year-wrap {
+  display: none;
   padding: 18px 30px 17px;
   font-size: 16px;
   color: #666;
@@ -1993,6 +1997,9 @@ i.icon:before {
     width: 100%;
     margin-left: 0px;
   }
+  #header .subtitle-wrap .subtitle {
+    line-height: 30px;
+  }
   #header .nav-container {
     padding: 0px;
   }
@@ -2122,5 +2129,8 @@ i.icon:before {
   }
   #footer .credit {
     text-align: center;
+  }
+  .widgets-container {
+    display: none;
   }
 }
