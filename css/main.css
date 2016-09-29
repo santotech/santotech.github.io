@@ -1549,7 +1549,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #67db1f;
+  background: #ffb696;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2426,6 +2426,10 @@ hr {
     text-align: center;
   }
 }
-.ds-powered-by {
+.ds-powered-by,
+.ds-dialog-footer {
   display: none;
+}
+#local-search-input {
+  width: 90%;
 }
