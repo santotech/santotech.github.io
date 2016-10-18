@@ -1,26 +1,375 @@
-<?xml version="1.0" encoding="utf-8"?>
-<search>
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="vim," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="《VIM教程》- 版本 1.7 
+
+Vim 是一个具有很多命令的功能非常强大的编辑器。限于篇幅，在本教程当中 就不详细介绍了。本教程的设计目标是讲述一些必要的基本命令，而掌握好这 些命令，您就能够很容易地将 Vim 当作一个通用编辑器来使用了。
+完成本教程的内容大约需要25-30分钟，取决于您训练的时间。
+ 注意： 每一节的命令操作将会更改本文。推荐您复制本文的一个副本，然后在副本上 进行训练(">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VIM教程">
+<meta property="og:url" content="http://www.santotech.tech/2016/09/29/vim/index.html">
+<meta property="og:site_name" content="santotech">
+<meta property="og:description" content="《VIM教程》- 版本 1.7 
+
+Vim 是一个具有很多命令的功能非常强大的编辑器。限于篇幅，在本教程当中 就不详细介绍了。本教程的设计目标是讲述一些必要的基本命令，而掌握好这 些命令，您就能够很容易地将 Vim 当作一个通用编辑器来使用了。
+完成本教程的内容大约需要25-30分钟，取决于您训练的时间。
+ 注意： 每一节的命令操作将会更改本文。推荐您复制本文的一个副本，然后在副本上 进行训练(">
+<meta property="og:image" content="http://www.santotech.tech/images/vim-01.jpg">
+<meta property="og:updated_time" content="2016-10-18T06:31:50.598Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="VIM教程">
+<meta name="twitter:description" content="《VIM教程》- 版本 1.7 
+
+Vim 是一个具有很多命令的功能非常强大的编辑器。限于篇幅，在本教程当中 就不详细介绍了。本教程的设计目标是讲述一些必要的基本命令，而掌握好这 些命令，您就能够很容易地将 Vim 当作一个通用编辑器来使用了。
+完成本教程的内容大约需要25-30分钟，取决于您训练的时间。
+ 注意： 每一节的命令操作将会更改本文。推荐您复制本文的一个副本，然后在副本上 进行训练(">
+<meta name="twitter:image" content="http://www.santotech.tech/images/vim-01.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://www.santotech.tech/2016/09/29/vim/"/>
+
+  <title> VIM教程 | santotech </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
   
   
     
-    <entry>
-      <title><![CDATA[Website-ESO]]></title>
-      <url>http://www.santotech.tech/2016/10/13/Website-ESO/</url>
-      <content type="html"><![CDATA[<p><strong>WEB前端性能优化</strong><br>    一般说来Web前端指网站业务逻辑之前的部分，包括浏览器加载、网站视图模型、图片服务、CDN服务等，主要优化手段有优化浏览器访问、使用反向代理、CDN等。</p>
-<h1 id="浏览器访问优化"><a href="#浏览器访问优化" class="headerlink" title="浏览器访问优化"></a><strong>浏览器访问优化</strong></h1><h2 id="减少http请求"><a href="#减少http请求" class="headerlink" title="减少http请求"></a>减少http请求</h2><p>  HTTP协议是无状态的应用层协议，意味着每次HTTP请求都需要建立通信链路、进行数据传输，而在服务器端，每一个HTTP都需要启动独立的线程去处理。这些通信和服务的开销都很昂贵，减少HTTP请求的数目可有效提高访问性能。<br>  减少HTTP的主要手段是合并CSS、合并javascript、合并图片。将浏览器一次访问需要的javascript、css合并成一个文件，这样浏览器就只要一次请求。图片也是可以合并，多张图片合成一张，如果每张图片都有不同的超链接，可以通过css偏移响应鼠标点击操作，构造不同的url。</p>
-<h2 id="使用浏览器缓存"><a href="#使用浏览器缓存" class="headerlink" title="使用浏览器缓存"></a>使用浏览器缓存</h2><p>  对一个网站而言，css、javascript、logo、图标这些静态资源文件更新的频率都比较低，而这些文件几乎每次HTTP请求都需要的，如果将这些文件缓存在浏览器中，可以极好地改善性能。通过设置HTTP头中的Cache-Control和Expires的属性，可设定浏览器缓存，缓存时间可以是数天，甚至是几个月。<br>  在某些时候，静态资源文件变化需要及时应用到客户端浏览器，这种情况，可通过改变文件名实现，即更新javascript文件并不是更新javascript文件内容，而是生成一个新的js文件并更新HTML文件中的引用。<br>  使用浏览器缓存策略的网站在更新静态资源时，采用批量更新的方法，比如需要更新10个图标文件，不宜把10个文件一次全部更新，而是一个文件一个文件逐步更新，并有一定时间间隔，以免用户浏览器突然大量缓存失效，集中更新缓存，造成服务负载聚增、网络堵塞的情况。</p>
-<h2 id="启用压缩"><a href="#启用压缩" class="headerlink" title="启用压缩"></a>启用压缩</h2><p>  在服务端对文件进行压缩，在浏览器端对文件解压，可有效减少通信传输的数据量。文本文件的压缩率可达80%以上，因此HTML、CSS、Javascript文件启用GZip压缩可达到较好的效果。但是压缩对服务器和浏览器产生一定的压力，在通信带宽良好，而服务器资源不足的情况下要权衡考虑。</p>
-<h2 id="Css放在页面最上面、Javascript放在页面最下面"><a href="#Css放在页面最上面、Javascript放在页面最下面" class="headerlink" title="Css放在页面最上面、Javascript放在页面最下面"></a>Css放在页面最上面、Javascript放在页面最下面</h2><p>  浏览器会在下载完全部Css后才对整个页面进行渲染，因此最好的方法是将Css放在页面最上面，让浏览器尽快下载Css。Javascript则相反，浏览器再加载Javascript后立即执行，有可能会阻塞整个页面，造成页面显示缓慢，因此Javascript最好放在页面最下面。但如果页面解析时候需要用到Javascript，这时候放在低不就不适了。</p>
-<h2 id="减少Cookie传输"><a href="#减少Cookie传输" class="headerlink" title="减少Cookie传输"></a>减少Cookie传输</h2><p>  一方面，Cookie包含在每次请求和响应中，太大的Cookie会严重影响数据传输，因此哪些数据需要写入Cookie需要慎重考虑，尽量减少Cookie中传输带数据量。另一方面，对于某些静态资源的访问，如Css、Script等，发送Cookie没有意义，可以考虑静态资源使用独立域名访问，避免请求静态资源时发送Cookie，减少Cookie传输的次数。</p>
-<h1 id="CDN加速"><a href="#CDN加速" class="headerlink" title="CDN加速"></a><strong>CDN加速</strong></h1><p>CDN（Content Distribute Network，内容分发网络）的本质仍然是一个缓存，而且将数据缓存在离用户最近的地方，使用户以最快的速度获取数据，即所谓网络访问第一跳，如图所示 <img src="/images/seo-01.png" alt="利用CDN的网站架构"><br>由于CDN部署在网络运营的机房，这些运营商又是终端用户的网络服务提供商，因此用户请求路由的第一跳就到达了CDN服务器，当CDN中存在浏览器请求的资源时，从CDN直接返回给浏览器，最短路径返回响应，加快用户访问速度，减少数据中心负载压力。<br>CDN能够缓存的一般是静态资源，如图片，文件，Css，Script脚本、静态网页等，但是这些文件访问频率度很高，将其缓存在CDN可极大改善网页的打开速度。</p>
-<h1 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a><strong>反向代理</strong></h1><p>传统代理服务器位于浏览器一侧，代理浏览器将HTTP请求发送到互联网上，而反向代理服务器位于网站机房一侧，代理网站Web服务器接收HTTP请求。如图所以 <img src="/images/seo-02.png" alt="利用反向代理的网站"><br>和传统代理服务器可以保护浏览器安全一样，反向代理服务器也具有保护网站安全的作用，来自互联网的访问请求必须经过代理服务器，相当于在Web服务器和可能的网络攻击之间建立一个屏障。<br>除了安全功能，代理服务器也可以通过配置缓存功能加速Web请求。当用户第一次访问静态内容的时候，静态内容就被缓存在反向代理服务器上，这样当其他用户访问该静态内容的时候，就可以直接从反向代理服务器返回，加速Web请求响应速度，减轻Web服务器负载压力。事实上，有些网站会把动态内容也缓存在代理服务器上，比如维基百科及某些博客论坛网站，把热门词条、帖子、博客缓存在反向代理服务器上加速用户访问速度，当这些动态内容有变化时，用过内部通知机制通知反向代理缓存失败，反向代理会重新加载最新的动态内容再次缓存起来。<br>此外，反向代理也可以实现负载均衡的功能，而通过负载均衡构建的应用集群可以提高系统总体处理能力，进而改善网站高并发情况下的性能。</p>
-]]></content>
-    </entry>
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">santotech</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">There are only two kinds of programming languages.</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/index.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-board">
+          <a href="/board" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-comment"></i> <br />
+            
+            留言
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
     
-    <entry>
-      <title><![CDATA[VIM教程]]></title>
-      <url>http://www.santotech.tech/2016/09/29/vim/</url>
-      <content type="html"><![CDATA[<p><strong> 《VIM教程》- 版本 1.7 </strong></p>
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                VIM教程
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-29T16:36:13+08:00" content="2016-09-29">
+              2016-09-29
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Notes/" itemprop="url" rel="index">
+                    <span itemprop="name">Notes</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/09/29/vim/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/29/vim/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><strong> 《VIM教程》- 版本 1.7 </strong></p>
 <blockquote>
 <p>Vim 是一个具有很多命令的功能非常强大的编辑器。限于篇幅，在本教程当中<br> 就不详细介绍了。本教程的设计目标是讲述一些必要的基本命令，而掌握好这<br> 些命令，您就能够很容易地将 Vim 当作一个通用编辑器来使用了。</p>
 <p>完成本教程的内容大约需要25-30分钟，取决于您训练的时间。</p>
@@ -76,638 +425,509 @@
 <p>本教程是由来自 Calorado School of Mines 的 Michael C. Pierce<br>  和Robert K. Ware 所编写的，其中很多创意由来自 Colorado State University 的<br>  Charles Smith 提供。编者的电子邮箱是：bware@mines.colorado.edu本教程已由<br>  Bram Moolenaar 专为 Vim 进行修订。</p>
 </blockquote>
 <p>  <img src="/images/vim-01.jpg" alt="Vim命令手册"></p>
-]]></content>
-    </entry>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/vim/" rel="tag">#vim</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/23/npmUpdate/" rel="next" title="npm update">
+                <i class="fa fa-chevron-left"></i> npm update
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/10/13/Website-ESO/" rel="prev" title="Website-ESO">
+                Website-ESO <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/09/29/vim/"
+     data-title="VIM教程"
+     data-content=""
+     data-url="http://www.santotech.tech/2016/09/29/vim/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
     
-    <entry>
-      <title><![CDATA[npm update]]></title>
-      <url>http://www.santotech.tech/2016/09/23/npmUpdate/</url>
-      <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">/* 查看npm本地版本号和最新版本号 */</div><div class="line">  npm i npm g</div><div class="line"></div><div class="line">/* 安装最新版本npm */</div><div class="line">  npm -g install npm@version</div></pre></td></tr></table></figure>
-]]></content>
-    </entry>
+      <div class="ds-thread" data-thread-key="2016/09/29/vim/"
+           data-title="VIM教程" data-url="http://www.santotech.tech/2016/09/29/vim/">
+      </div>
     
-    <entry>
-      <title><![CDATA[pullpage]]></title>
-      <url>http://www.santotech.tech/2016/09/22/pullpage-1/</url>
-      <content type="html"><![CDATA[<h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><ul>
-<li>引入文件</li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"css/jquery.fullPage.css"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!-- jquery.easings.min.js 是必须的，用于 easing 参数，也可以使用完整的 jQuery UI 代替 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/jquery.easings.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!-- 如果 scrollOverflow 设置为 true，则需要引入 jquery.slimscroll.min.js，一般情况下不需要 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/jquery.slimscroll.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/jquery.fullPage.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
-<ul>
-<li>HTML</li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"fullpage"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"section"</span>&gt;</span>第一屏<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"section"</span>&gt;</span>第二屏<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"section"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"slide"</span>&gt;</span>第三屏的第一屏<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"slide"</span>&gt;</span>第三屏的第二屏<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"slide"</span>&gt;</span>第三屏的第三屏<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"slide"</span>&gt;</span>第三屏的第四屏<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"section"</span>&gt;</span>第四屏<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<ul>
-<li>JavaScript</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    $(<span class="string">'#fullpage'</span>).fullpage();</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><ul>
-<li>选项</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">选项</th>
-<th style="text-align:left">类型</th>
-<th style="text-align:left">默认值</th>
-<th style="text-align:left">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">verticalCentered</td>
-<td style="text-align:left">字符串</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left">内容是否垂直居中</td>
-</tr>
-<tr>
-<td style="text-align:left">resize</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">字体是否随着窗口缩放而缩放</td>
-</tr>
-<tr>
-<td style="text-align:left">slidesColor</td>
-<td style="text-align:left">函数</td>
-<td style="text-align:left">无</td>
-<td style="text-align:left">设置背景颜色</td>
-</tr>
-<tr>
-<td style="text-align:left">anchors</td>
-<td style="text-align:left">数组</td>
-<td style="text-align:left">无</td>
-<td style="text-align:left">定义锚链接</td>
-</tr>
-<tr>
-<td style="text-align:left">scrollingSpeed</td>
-<td style="text-align:left">整数</td>
-<td style="text-align:left">700</td>
-<td style="text-align:left">滚动速度，单位为毫秒</td>
-</tr>
-<tr>
-<td style="text-align:left">easing</td>
-<td style="text-align:left">字符串</td>
-<td style="text-align:left">easeInQuart</td>
-<td style="text-align:left">滚动动画方式</td>
-</tr>
-<tr>
-<td style="text-align:left">menu</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">绑定菜单，设定的相关属性与 anchors 的值对应后，菜单可以控制滚动</td>
-</tr>
-<tr>
-<td style="text-align:left">navigation</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">是否显示项目导航</td>
-</tr>
-<tr>
-<td style="text-align:left">navigationPosition</td>
-<td style="text-align:left">字符串</td>
-<td style="text-align:left">right</td>
-<td style="text-align:left">项目导航的位置，可选 left 或 right</td>
-</tr>
-<tr>
-<td style="text-align:left">navigationColor</td>
-<td style="text-align:left">字符串</td>
-<td style="text-align:left">#000</td>
-<td style="text-align:left">项目导航的颜色</td>
-</tr>
-<tr>
-<td style="text-align:left">navigationTooltips</td>
-<td style="text-align:left">数组</td>
-<td style="text-align:left">空</td>
-<td style="text-align:left">项目导航的 tip</td>
-</tr>
-<tr>
-<td style="text-align:left">slidesNavigation</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">是否显示左右滑块的项目导航</td>
-</tr>
-<tr>
-<td style="text-align:left">slidesNavPosition</td>
-<td style="text-align:left">字符串</td>
-<td style="text-align:left">bottom</td>
-<td style="text-align:left">左右滑块的项目导航的位置，可选 top 或 bottom</td>
-</tr>
-<tr>
-<td style="text-align:left">controlArrowColor</td>
-<td style="text-align:left">字符串</td>
-<td style="text-align:left">#fff</td>
-<td style="text-align:left">左右滑块的箭头的背景颜色</td>
-</tr>
-<tr>
-<td style="text-align:left">loopBottom</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">滚动到最底部后是否滚回顶部</td>
-</tr>
-<tr>
-<td style="text-align:left">loopTop</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">滚动到最顶部后是否滚底部</td>
-</tr>
-<tr>
-<td style="text-align:left">loopHorizontal</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left">左右滑块是否循环滑动</td>
-</tr>
-<tr>
-<td style="text-align:left">autoScrolling</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left">是否使用插件的滚动方式，如果选择 false，则会出现浏览器自带的滚动条</td>
-</tr>
-<tr>
-<td style="text-align:left">scrollOverflow</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">内容超过满屏后是否显示滚动条</td>
-</tr>
-<tr>
-<td style="text-align:left">css3</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">是否使用 CSS3 transforms 滚动</td>
-</tr>
-<tr>
-<td style="text-align:left">paddingTop</td>
-<td style="text-align:left">字符串</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">与顶部的距离\</td>
-</tr>
-<tr>
-<td style="text-align:left">paddingBottom</td>
-<td style="text-align:left">字符串</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">与底部距离</td>
-</tr>
-<tr>
-<td style="text-align:left">fixedElements</td>
-<td style="text-align:left">字符串</td>
-<td style="text-align:left">无</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">normalScrollElements</td>
-<td style="text-align:left"></td>
-<td style="text-align:left"></td>
-<td style="text-align:left">无</td>
-</tr>
-<tr>
-<td style="text-align:left">keyboardScrolling</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left">是否使用键盘方向键导航</td>
-</tr>
-<tr>
-<td style="text-align:left">touchSensitivity</td>
-<td style="text-align:left">整数</td>
-<td style="text-align:left">5</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">continuousVertical</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">是否循环滚动，与 loopTop 及 loopBottom 不兼容</td>
-</tr>
-<tr>
-<td style="text-align:left">animateAnchor</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">normalScrollElementTouchThreshold</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">5</td>
-<td style="text-align:left"><br></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>方法</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">名称</th>
-<th style="text-align:left">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">moveSectionUp()</td>
-<td style="text-align:left">向上滚动</td>
-</tr>
-<tr>
-<td style="text-align:left">moveSectionDown()</td>
-<td style="text-align:left">向下滚动</td>
-</tr>
-<tr>
-<td style="text-align:left">moveTo(section, slide)</td>
-<td style="text-align:left">滚动到</td>
-</tr>
-<tr>
-<td style="text-align:left">moveSlideRight()</td>
-<td style="text-align:left">slide 向右滚动</td>
-</tr>
-<tr>
-<td style="text-align:left">moveSlideLeft()</td>
-<td style="text-align:left">slide 向左滚动</td>
-</tr>
-<tr>
-<td style="text-align:left">setAutoScrolling()</td>
-<td style="text-align:left">设置页面滚动方式，设置为 true 时自动滚动</td>
-</tr>
-<tr>
-<td style="text-align:left">setAllowScrolling()</td>
-<td style="text-align:left">添加或删除鼠标滚轮/触控板控制</td>
-</tr>
-<tr>
-<td style="text-align:left">setKeyboardScrolling()</td>
-<td style="text-align:left">添加或删除键盘方向键控制</td>
-</tr>
-<tr>
-<td style="text-align:left">setScrollingSpeed()</td>
-<td style="text-align:left">定义以毫秒为单位的滚动速度</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>回调函数</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">名称</th>
-<th style="text-align:left">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">afterLoad</td>
-<td style="text-align:left">滚动到某一屏后的回调函数，接收 anchorLink 和 index 两个参数，anchorLink 是锚链接的名称，index 是序号，从1开始计算</td>
-</tr>
-<tr>
-<td style="text-align:left">onLeave</td>
-<td style="text-align:left">滚动前的回调函数，接收 index、nextIndex 和 direction 3个参数：index 是离开的”页面”的序号，从1开始计算；<br>nextIndex 是滚动到的”页面”的序号，从1开始计算；<br>direction 判断往上滚动还是往下滚动，值是 up 或 down。</td>
-</tr>
-<tr>
-<td style="text-align:left">afterRender</td>
-<td style="text-align:left">页面结构生成后的回调函数，或者说页面初始化完成后的回调函数</td>
-</tr>
-<tr>
-<td style="text-align:left">afterSlideLoad</td>
-<td style="text-align:left">滚动到某一水平滑块后的回调函数，与 afterLoad 类似，接收 anchorLink、index、slideIndex、direction 4个参数</td>
-</tr>
-<tr>
-<td style="text-align:left">onSlideLeave</td>
-<td style="text-align:left">某一水平滑块滚动前的回调函数，与 onLeave 类似，接收 anchorLink、index、slideIndex、direction 4个参数</td>
-</tr>
-</tbody>
-</table>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[pullpage]]></title>
-      <url>http://www.santotech.tech/2016/09/22/pullpage/</url>
-      <content type="html"><![CDATA[<h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><ul>
-<li>引入文件</li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"css/jquery.fullPage.css"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!-- jquery.easings.min.js 是必须的，用于 easing 参数，也可以使用完整的 jQuery UI 代替 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/jquery.easings.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!-- 如果 scrollOverflow 设置为 true，则需要引入 jquery.slimscroll.min.js，一般情况下不需要 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/jquery.slimscroll.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/jquery.fullPage.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
-<ul>
-<li>HTML</li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"fullpage"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"section"</span>&gt;</span>第一屏<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"section"</span>&gt;</span>第二屏<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"section"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"slide"</span>&gt;</span>第三屏的第一屏<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"slide"</span>&gt;</span>第三屏的第二屏<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"slide"</span>&gt;</span>第三屏的第三屏<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"slide"</span>&gt;</span>第三屏的第四屏<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"section"</span>&gt;</span>第四屏<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<ul>
-<li>JavaScript</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    $(<span class="string">'#fullpage'</span>).fullpage();</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><ul>
-<li>选项</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">选项</th>
-<th style="text-align:left">类型</th>
-<th style="text-align:left">默认值</th>
-<th style="text-align:left">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">verticalCentered</td>
-<td style="text-align:left">字符串</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left">内容是否垂直居中</td>
-</tr>
-<tr>
-<td style="text-align:left">resize</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">字体是否随着窗口缩放而缩放</td>
-</tr>
-<tr>
-<td style="text-align:left">slidesColor</td>
-<td style="text-align:left">函数</td>
-<td style="text-align:left">无</td>
-<td style="text-align:left">设置背景颜色</td>
-</tr>
-<tr>
-<td style="text-align:left">anchors</td>
-<td style="text-align:left">数组</td>
-<td style="text-align:left">无</td>
-<td style="text-align:left">定义锚链接</td>
-</tr>
-<tr>
-<td style="text-align:left">scrollingSpeed</td>
-<td style="text-align:left">整数</td>
-<td style="text-align:left">700</td>
-<td style="text-align:left">滚动速度，单位为毫秒</td>
-</tr>
-<tr>
-<td style="text-align:left">easing</td>
-<td style="text-align:left">字符串</td>
-<td style="text-align:left">easeInQuart</td>
-<td style="text-align:left">滚动动画方式</td>
-</tr>
-<tr>
-<td style="text-align:left">menu</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">绑定菜单，设定的相关属性与 anchors 的值对应后，菜单可以控制滚动</td>
-</tr>
-<tr>
-<td style="text-align:left">navigation</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">是否显示项目导航</td>
-</tr>
-<tr>
-<td style="text-align:left">navigationPosition</td>
-<td style="text-align:left">字符串</td>
-<td style="text-align:left">right</td>
-<td style="text-align:left">项目导航的位置，可选 left 或 right</td>
-</tr>
-<tr>
-<td style="text-align:left">navigationColor</td>
-<td style="text-align:left">字符串</td>
-<td style="text-align:left">#000</td>
-<td style="text-align:left">项目导航的颜色</td>
-</tr>
-<tr>
-<td style="text-align:left">navigationTooltips</td>
-<td style="text-align:left">数组</td>
-<td style="text-align:left">空</td>
-<td style="text-align:left">项目导航的 tip</td>
-</tr>
-<tr>
-<td style="text-align:left">slidesNavigation</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">是否显示左右滑块的项目导航</td>
-</tr>
-<tr>
-<td style="text-align:left">slidesNavPosition</td>
-<td style="text-align:left">字符串</td>
-<td style="text-align:left">bottom</td>
-<td style="text-align:left">左右滑块的项目导航的位置，可选 top 或 bottom</td>
-</tr>
-<tr>
-<td style="text-align:left">controlArrowColor</td>
-<td style="text-align:left">字符串</td>
-<td style="text-align:left">#fff</td>
-<td style="text-align:left">左右滑块的箭头的背景颜色</td>
-</tr>
-<tr>
-<td style="text-align:left">loopBottom</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">滚动到最底部后是否滚回顶部</td>
-</tr>
-<tr>
-<td style="text-align:left">loopTop</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">滚动到最顶部后是否滚底部</td>
-</tr>
-<tr>
-<td style="text-align:left">loopHorizontal</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left">左右滑块是否循环滑动</td>
-</tr>
-<tr>
-<td style="text-align:left">autoScrolling</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left">是否使用插件的滚动方式，如果选择 false，则会出现浏览器自带的滚动条</td>
-</tr>
-<tr>
-<td style="text-align:left">scrollOverflow</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">内容超过满屏后是否显示滚动条</td>
-</tr>
-<tr>
-<td style="text-align:left">css3</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">是否使用 CSS3 transforms 滚动</td>
-</tr>
-<tr>
-<td style="text-align:left">paddingTop</td>
-<td style="text-align:left">字符串</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">与顶部的距离\</td>
-</tr>
-<tr>
-<td style="text-align:left">paddingBottom</td>
-<td style="text-align:left">字符串</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">与底部距离</td>
-</tr>
-<tr>
-<td style="text-align:left">fixedElements</td>
-<td style="text-align:left">字符串</td>
-<td style="text-align:left">无</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">normalScrollElements</td>
-<td style="text-align:left"></td>
-<td style="text-align:left"></td>
-<td style="text-align:left">无</td>
-</tr>
-<tr>
-<td style="text-align:left">keyboardScrolling</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left">是否使用键盘方向键导航</td>
-</tr>
-<tr>
-<td style="text-align:left">touchSensitivity</td>
-<td style="text-align:left">整数</td>
-<td style="text-align:left">5</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">continuousVertical</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">是否循环滚动，与 loopTop 及 loopBottom 不兼容</td>
-</tr>
-<tr>
-<td style="text-align:left">animateAnchor</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">normalScrollElementTouchThreshold</td>
-<td style="text-align:left">布尔值</td>
-<td style="text-align:left">5</td>
-<td style="text-align:left"><br></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>方法</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">名称</th>
-<th style="text-align:left">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">moveSectionUp()</td>
-<td style="text-align:left">向上滚动</td>
-</tr>
-<tr>
-<td style="text-align:left">moveSectionDown()</td>
-<td style="text-align:left">向下滚动</td>
-</tr>
-<tr>
-<td style="text-align:left">moveTo(section, slide)</td>
-<td style="text-align:left">滚动到</td>
-</tr>
-<tr>
-<td style="text-align:left">moveSlideRight()</td>
-<td style="text-align:left">slide 向右滚动</td>
-</tr>
-<tr>
-<td style="text-align:left">moveSlideLeft()</td>
-<td style="text-align:left">slide 向左滚动</td>
-</tr>
-<tr>
-<td style="text-align:left">setAutoScrolling()</td>
-<td style="text-align:left">设置页面滚动方式，设置为 true 时自动滚动</td>
-</tr>
-<tr>
-<td style="text-align:left">setAllowScrolling()</td>
-<td style="text-align:left">添加或删除鼠标滚轮/触控板控制</td>
-</tr>
-<tr>
-<td style="text-align:left">setKeyboardScrolling()</td>
-<td style="text-align:left">添加或删除键盘方向键控制</td>
-</tr>
-<tr>
-<td style="text-align:left">setScrollingSpeed()</td>
-<td style="text-align:left">定义以毫秒为单位的滚动速度</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>回调函数</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">名称</th>
-<th style="text-align:left">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">afterLoad</td>
-<td style="text-align:left">滚动到某一屏后的回调函数，接收 anchorLink 和 index 两个参数，anchorLink 是锚链接的名称，index 是序号，从1开始计算</td>
-</tr>
-<tr>
-<td style="text-align:left">onLeave</td>
-<td style="text-align:left">滚动前的回调函数，接收 index、nextIndex 和 direction 3个参数：index 是离开的”页面”的序号，从1开始计算；<br>nextIndex 是滚动到的”页面”的序号，从1开始计算；<br>direction 判断往上滚动还是往下滚动，值是 up 或 down。</td>
-</tr>
-<tr>
-<td style="text-align:left">afterRender</td>
-<td style="text-align:left">页面结构生成后的回调函数，或者说页面初始化完成后的回调函数</td>
-</tr>
-<tr>
-<td style="text-align:left">afterSlideLoad</td>
-<td style="text-align:left">滚动到某一水平滑块后的回调函数，与 afterLoad 类似，接收 anchorLink、index、slideIndex、direction 4个参数</td>
-</tr>
-<tr>
-<td style="text-align:left">onSlideLeave</td>
-<td style="text-align:left">某一水平滑块滚动前的回调函数，与 onLeave 类似，接收 anchorLink、index、slideIndex、direction 4个参数</td>
-</tr>
-</tbody>
-</table>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[bootstrap]]></title>
-      <url>http://www.santotech.tech/2016/09/22/bootstrap-1/</url>
-      <content type="html"><![CDATA[<h2 id="this-a-code-snippt-that-bootstrap"><a href="#this-a-code-snippt-that-bootstrap" class="headerlink" title="this a code snippt that bootstrap"></a>this a code snippt that bootstrap</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">""</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[bootstrap]]></title>
-      <url>http://www.santotech.tech/2016/09/21/bootstrap/</url>
-      <content type="html"><![CDATA[<h1 id="This-is-a-code-snippet-for-of-bootstrap"><a href="#This-is-a-code-snippet-for-of-bootstrap" class="headerlink" title="This is a code snippet for of bootstrap"></a>This is a code snippet for of bootstrap</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-8"</span>&gt;</span>.col-md-8<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-4"</span>&gt;</span>.col-md-4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[code]]></title>
-      <url>http://www.santotech.tech/2016/09/18/js-css/</url>
-      <content type="html"><![CDATA[<h1 id="This-is-a-css-code-snippet"><a href="#This-is-a-css-code-snippet" class="headerlink" title="This is a css code snippet"></a>This is a css code snippet</h1><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#box</span> &#123;</div><div class="line">  <span class="attribute">backgroun-color</span>: <span class="number">#000</span>;</div><div class="line">  <span class="attribute">font-size</span>: <span class="number">2rem</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h1 id="This-is-a-javascript-code-snippet"><a href="#This-is-a-javascript-code-snippet" class="headerlink" title="This is a javascript code snippet"></a>This is a javascript code snippet</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">count</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> a = <span class="number">2</span>,</div><div class="line">      b = <span class="number">4</span>;</div><div class="line">  <span class="keyword">return</span> a + b;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[santo]]></title>
-      <url>http://www.santotech.tech/2016/09/14/santo/</url>
-      <content type="html"><![CDATA[<h1 id="Title"><a href="#Title" class="headerlink" title="Title"></a>Title</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">1</span>, b = <span class="number">2</span>;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">count</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  a + b;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Hello World]]></title>
-      <url>http://www.santotech.tech/2016/09/14/hello-world/</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    </entry>
-    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.png"
+               alt="Santo Monster" />
+          <p class="site-author-name" itemprop="name">Santo Monster</p>
+          <p class="site-description motion-element" itemprop="description">javascript,css</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">10</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/santotech" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="Mailto:santotech@sina.com" target="_blank" title="Email">
+                  
+                    <i class="fa fa-fw fa-send-o"></i>
+                  
+                  Email
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/2803116122/home?topnav=1&wvr=6" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              友情链接
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://github.com/chmodxw" title="chmodxw" target="_blank">chmodxw</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第一讲小结"><span class="nav-number">1.</span> <span class="nav-text">第一讲小结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一讲第一节：移动光标"><span class="nav-number">1.1.</span> <span class="nav-text">第一讲第一节：移动光标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一讲第二节：VIM的进入和退出"><span class="nav-number">1.2.</span> <span class="nav-text">第一讲第二节：VIM的进入和退出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一讲第三节：文本编辑之删除"><span class="nav-number">1.3.</span> <span class="nav-text">第一讲第三节：文本编辑之删除</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一讲第四节：文本编辑之插入"><span class="nav-number">1.4.</span> <span class="nav-text">第一讲第四节：文本编辑之插入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一讲第五节：文本编辑之添加"><span class="nav-number">1.5.</span> <span class="nav-text">第一讲第五节：文本编辑之添加</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一讲第六节：编辑文件"><span class="nav-number">1.6.</span> <span class="nav-text">第一讲第六节：编辑文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二讲小结"><span class="nav-number">2.</span> <span class="nav-text">第二讲小结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第二讲第一节：删除类命令"><span class="nav-number">2.1.</span> <span class="nav-text">第二讲第一节：删除类命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二讲第二节：更多删除类命令"><span class="nav-number">2.2.</span> <span class="nav-text">第二讲第二节：更多删除类命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二讲第三节：关于命令和对象"><span class="nav-number">2.3.</span> <span class="nav-text">第二讲第三节：关于命令和对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二讲第四节：使用计数指定动作"><span class="nav-number">2.4.</span> <span class="nav-text">第二讲第四节：使用计数指定动作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二讲第五节：使用计数以删除更多"><span class="nav-number">2.5.</span> <span class="nav-text">第二讲第五节：使用计数以删除更多</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二讲第六节：操作整行"><span class="nav-number">2.6.</span> <span class="nav-text">第二讲第六节：操作整行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二讲第七节：撤消类命令"><span class="nav-number">2.7.</span> <span class="nav-text">第二讲第七节：撤消类命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第三讲小结"><span class="nav-number">3.</span> <span class="nav-text">第三讲小结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第三讲第一节：置入类命令"><span class="nav-number">3.1.</span> <span class="nav-text">第三讲第一节：置入类命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三讲第二节：替换类命令"><span class="nav-number">3.2.</span> <span class="nav-text">第三讲第二节：替换类命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三讲第三节：更改类命令"><span class="nav-number">3.3.</span> <span class="nav-text">第三讲第三节：更改类命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三讲第四节：使用c更改更多"><span class="nav-number">3.4.</span> <span class="nav-text">第三讲第四节：使用c更改更多</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第四讲小结"><span class="nav-number">4.</span> <span class="nav-text">第四讲小结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第四讲第一节：定位及文件状态"><span class="nav-number">4.1.</span> <span class="nav-text">第四讲第一节：定位及文件状态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第四讲第二节：搜索类命令"><span class="nav-number">4.2.</span> <span class="nav-text">第四讲第二节：搜索类命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第四讲第三节：配对括号的查找"><span class="nav-number">4.3.</span> <span class="nav-text">第四讲第三节：配对括号的查找</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第四讲第四节：替换命令"><span class="nav-number">4.4.</span> <span class="nav-text">第四讲第四节：替换命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第五讲小结"><span class="nav-number">5.</span> <span class="nav-text">第五讲小结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第五讲第一节：在-VIM-内执行外部命令的方法"><span class="nav-number">5.1.</span> <span class="nav-text">第五讲第一节：在 VIM 内执行外部命令的方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第五讲第二节：关于保存文件的更多信息"><span class="nav-number">5.2.</span> <span class="nav-text">第五讲第二节：关于保存文件的更多信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第五讲第三节：一个具有选择性的保存命令"><span class="nav-number">5.3.</span> <span class="nav-text">第五讲第三节：一个具有选择性的保存命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第五讲第四节：提取和合并文件"><span class="nav-number">5.4.</span> <span class="nav-text">第五讲第四节：提取和合并文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第六讲小结"><span class="nav-number">6.</span> <span class="nav-text">第六讲小结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第六讲第一节：打开类命令"><span class="nav-number">6.1.</span> <span class="nav-text">第六讲第一节：打开类命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第六讲第二节：附加类命令"><span class="nav-number">6.2.</span> <span class="nav-text">第六讲第二节：附加类命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第六讲第三节：另外一个置换类命令的版本"><span class="nav-number">6.3.</span> <span class="nav-text">第六讲第三节：另外一个置换类命令的版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第六讲第四节：复制粘贴文本"><span class="nav-number">6.4.</span> <span class="nav-text">第六讲第四节：复制粘贴文本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第六讲第五节：设置类命令的选项"><span class="nav-number">6.5.</span> <span class="nav-text">第六讲第五节：设置类命令的选项</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第七讲小结"><span class="nav-number">7.</span> <span class="nav-text">第七讲小结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第七讲第一节：获取帮助信息"><span class="nav-number">7.1.</span> <span class="nav-text">第七讲第一节：获取帮助信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第七讲第二节：创建启动脚本"><span class="nav-number">7.2.</span> <span class="nav-text">第七讲第二节：创建启动脚本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第七讲第三节：补全功能"><span class="nav-number">7.3.</span> <span class="nav-text">第七讲第三节：补全功能</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Santo Monster</span>
+</div>
+
+<!--
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+-->
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
   
   
-</search>
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"santotech"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
